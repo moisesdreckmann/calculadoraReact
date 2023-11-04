@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+
+:root {
+  --cor1: rgb(0, 1, 3);
+  --cor2: rgb(51, 49, 56);
+  --cor3: rgb(82, 80, 84);
+  --cor4: rgb(255, 255, 250);
+  --cor5: rgb(243, 47, 43);
+  --cor6: rgb(95, 173, 65);  
+}
+
+body {
+  background-color: var(--cor4);
+}
+
+main {
+  width: 198px;
+  height: auto;
+  margin: 100px auto;
+  border: 4px solid var(--cor1);
+  background-color: var(--cor1);
+  border-radius: 4px 4px;   
+  box-shadow: 4px -4px 6px -1px rgba(0, 0, 0, 0.183);
+}
+
+.visorContainer {
+  width: 190px;
+  height: 80px;
+  background-color: var(--cor1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.visor {
+  width: 180px;
+  height: 50px;
+  background-color: var(--cor4);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.205),
+  inset 2px 2px 3px rgba(0, 0, 0, 0.205),
+        -2px -2px 3px rgba(0, 0, 0, 0.205);
+  position: relative;
+}
+
+#visorInput {
+  width: 180px;
+  position: absolute;
+  inset: 0;
+  background-color: var(--cor4);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.205),
+  inset 2px 2px 3px rgba(0, 0, 0, 0.205),
+        -2px -2px 3px rgba(0, 0, 0, 0.205);
+  padding: 10px;
+  font-size: 25px;
+  text-align: end;
+  color: var(--cor2);
+}
+
+.numbersContainer {
+  width: 190px;
+  height: 240px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor2);
+  gap: 6px;
+}
+
+.numbersRow {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 6px;
+  margin-block: 6px;
+}
+
+.numbersColumn {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+  float: right;
+}
+
+.btn, .btnC, .btnC2 {
+  width: 40px;
+  height: 40px;
+  font-size: 19px;
+  background-color: var(--cor3);
+  color: var(--cor4);
+  box-shadow: 3px 3px 1px -2px rgba(0, 0, 0, 0.272);
+  border-radius: 2px 2px;
+  font-weight: bold;
+}
+
+.btn:not(.btnLogo):hover, .btnC:hover, .btnC2:hover {
+  background-color: rgb(96, 95, 96);
+  font-size: 18px;
+  transform: scale(0.98);
+  transition: transform .1s linear;  
+  cursor: pointer;
+}
+
+.btnResult {
+  height: 86px;
+  background-color: var(--cor5);
+}
+
+.btnResult:hover {
+  background-color: rgb(253, 56, 52) !important;
+}
+
+.btnC {
+  color: var(--cor5);
+}
+
+.btnOperator, .btnC2 {
+  color: var(--cor6);
+}
